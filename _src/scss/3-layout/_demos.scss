@@ -1,0 +1,258 @@
+.page-header .navbar-menu-wraper:after {
+    display: none;
+}
+
+.demos-hero-section {
+    background-color: $ma-extra-dark-grey-color;
+
+    .overlay-photo-image-bg {
+        background-image: url('../assets/Images/demos/index-hero/index-hero.jpg');
+        opacity: 1;
+    }
+
+    .hero-text-area {
+        margin: 0 !important;
+
+        .theme-name {
+            font-size: 5rem;
+            font-weight: 900;
+
+            @include ma-md-screens {
+                font-size: 3.5rem;
+
+            }
+
+
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-#{$start-direction}: auto;
+            margin-#{$end-direction}: auto;
+
+        }
+
+
+    }
+
+
+
+    .overlay-image-bg {
+        background-image: url('../assets/Images/demos/index-hero-bg.jpg') !important;
+        opacity: 1;
+    }
+
+    .overlay-linear-gradient {
+        opacity: .85 !important;
+    }
+
+    .overlay-color {
+        opacity: .85 !important;
+        background: $ma-black-color !important;
+    }
+
+
+
+}
+
+
+
+.theme-name {
+
+    overflow: hidden;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $ma-grey-color;
+
+    @include ma-md-screens {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+
+
+
+.hero-theme-logo>img {
+    // max-width: 10rem;
+    // max-height: 10rem;
+    margin-bottom: 3rem;
+
+    @include ma-md-screens {
+
+        max-width: 10rem;
+        max-height: 10rem;
+    }
+}
+
+
+
+
+
+
+.demos {
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 125px;
+        padding: 2rem;
+        border: 4px solid $ma-main-color;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .section-heading {
+        .section-title {
+            color: $ma-main-color !important;
+
+            .heading-brand-name {
+                color: $ma-white-color;
+                text-transform: capitalize;
+                letter-spacing: 4px;
+                font-weight: 300;
+            }
+        }
+
+    }
+
+    background: $ma-black-color;
+
+    .demo {
+        position: relative;
+        margin-bottom: 2rem;
+        width: 100%;
+        // max-height: 450px;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        z-index: 0;
+        @include ma-transition();
+
+
+
+
+        .overlay-color {
+            opacity: 0;
+            z-index: 1;
+
+
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+
+            .overlay-color {
+                opacity: .85;
+            }
+
+            .demo-links {
+                top: 50%;
+                transform: translate(-50%, -50%);
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .demo-name {
+                background-color: $ma-main-color;
+            }
+        }
+
+        .note {
+            position: absolute;
+            top: 0;
+            #{$end-direction}: 0;
+            font-family: $fontMain;
+            font-size: 1.25rem;
+            font-weight: 500;
+            padding: 1rem 2rem;
+            background: $ma-main-color;
+            transform: translateY(50%);
+            text-transform: lowercase;
+            z-index: 2;
+            @include ma-transition;
+        }
+
+        .bg-img {
+            position: relative;
+        }
+
+        .demo-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .demo-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            #{$start-direction}: 50%;
+            transform: translate(-50%, 0);
+            visibility: hidden;
+            opacity: 0;
+            z-index: 3;
+            @include ma-transition;
+
+            .demo-link {
+                padding: .75rem 1rem;
+                // border: 1px solid $ma-main-color;
+                color: $ma-main-color;
+                text-transform: capitalize;
+                font-size: 1.5rem;
+                text-align: center;
+                text-decoration: none !important;
+                @include ma-transition;
+
+                &:hover {
+                    transform: translateY(-10px);
+
+                }
+
+                &:first-child {
+                    margin-#{$end-direction}: 1rem;
+                }
+
+                &.dark-demo {
+                    background-color: $ma-semi-dark-grey-color;
+                    color: $ma-white-color;
+                }
+
+                &.light-demo {
+                    background-color: $ma-main-color;
+                    color: $ma-white-color;
+                }
+            }
+        }
+
+        .demo-name {
+            position: relative;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 2rem 1rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: $ma-white-color;
+            background-color: $ma-extra-dark-grey-color;
+            margin: 0;
+            @include ma-transition;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}

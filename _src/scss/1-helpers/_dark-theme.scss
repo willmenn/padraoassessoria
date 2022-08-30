@@ -1,0 +1,641 @@
+body {
+  &.dark-theme {
+    color: $ma-white-color;
+    background: $ma-black-color;
+
+    //Globals
+
+    .tag-line {
+      color: $ma-white-color;
+    }
+
+    .hollow-text {
+      // inherit the stroke color from the element color
+      -webkit-text-stroke-color: inherit;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-fill-color: $transparent;
+    }
+
+    .section-heading {
+      .section-title {
+        color: $ma-grey-color;
+
+      }
+
+      .section-subtitle {
+        color: rgba($ma-grey-color, .75);
+      }
+    }
+
+    .section-shape-divider-bottom {
+      svg {
+        path {
+          fill: $ma-black-color;
+        }
+      }
+
+
+      &.fill-shade {
+        svg {
+          path {
+            fill: lighten($ma-black-color, 5%) !important;
+          }
+        }
+      }
+
+    }
+
+    %pattern-shape {
+      background-image: url('../assets/Images/patterns/dots-pattern-white.png') !important;
+      opacity: .2 !important;
+    }
+
+
+
+
+
+    .ma-tabs {
+      .switch {
+        .switch-btns-list {
+          .switch-btn {
+            color: rgba($ma-white-color, .75) !important;
+            border-color: rgba($ma-white-color, .25) !important;
+
+
+            &.hover {
+              color: $ma-main-color !important;
+              border-color: $ma-main-color !important;
+            }
+
+            &.active {
+              color: $ma-white-color !important;
+              border-color: $ma-main-color !important;
+            }
+          }
+
+        }
+      }
+    }
+
+
+    //benefits
+    .benefits {
+      .benefits-boxes-area {
+        .benefit-box {
+          background: inherit !important;
+        }
+
+        .benefit-title {
+          color: $ma-white-color !important;
+        }
+
+        .benefit-text {
+          color: rgba($ma-grey-color, .85) !important;
+        }
+      }
+    }
+
+
+    //blog
+    .blog {
+
+      .sidebar-box-title {
+        color: $ma-grey-color !important;
+      }
+
+      .cats {
+        .cat-item {
+
+          .cat-link {
+            color: $ma-grey-color !important;
+          }
+
+        }
+      }
+
+
+      .tags {
+        .tag-item {
+          background-color: $ma-extra-dark-grey-color !important;
+
+          &:hover {
+            background-color: $ma-main-color !important;
+          }
+        }
+
+        .tags-icon-label {
+          color: $ma-grey-color !important;
+        }
+
+      }
+
+
+      .recent-posts {
+        .content {
+          .r-post-title {
+            color: $ma-grey-color !important;
+
+            &:hover {
+              color: $ma-main-color !important;
+
+            }
+          }
+
+          .r-post-date {
+            color: rgba($ma-grey-color, .75) !important;
+
+          }
+        }
+
+      }
+
+      .posts-grid {
+
+
+
+        .post-summary {
+
+          .post-info {
+
+            .info {
+              color: $ma-grey-color !important;
+
+              &:not(:last-child):before {
+                color: $ma-grey-color;
+
+              }
+            }
+
+
+          }
+
+          .post-title {
+            color: $ma-grey-color !important;
+
+            &:hover {
+              color: $ma-main-color !important;
+
+            }
+          }
+
+          .post-excerpt {
+            color: rgba($ma-grey-color, .75) !important;
+          }
+        }
+
+      }
+
+      .posts-pagination {
+
+
+
+        .posts-page-item {
+          background-color: $ma-extra-dark-grey-color !important;
+          color: $ma-main-color !important;
+          border-color: $ma-main-color !important;
+
+        }
+
+        .deactive-posts-page-item {
+          background-color: $ma-grey-color !important;
+          border-color: $ma-semi-dark-grey-color !important;
+        }
+
+      }
+
+      .post-main-area {
+
+        .panel {
+          .panel-title {
+            color: $ma-grey-color !important;
+          }
+
+        }
+
+        .post-title {
+          color: $ma-grey-color !important;
+        }
+
+        .share-title {
+
+          color: $ma-grey-color !important;
+        }
+
+        .post-info {
+          .info {
+
+            color: $ma-grey-color !important;
+
+            &:not(:last-child):before {
+              color: $ma-grey-color !important;
+            }
+          }
+        }
+
+        .post-content {
+
+          .post-heading {
+
+            color: $ma-grey-color !important;
+          }
+
+
+          .post-text {
+            color: rgba($ma-grey-color, .75);
+          }
+
+          a {
+
+
+
+
+            &:hover {
+              color: $ma-white-color;
+            }
+          }
+
+          .post-list {
+            .post-list-item {
+              color: rgba($ma-grey-color, .75) !important;
+            }
+          }
+
+        }
+
+        .other-posts {
+
+          .other-post-title {
+
+            color: $ma-grey-color !important;
+
+            &:hover {
+              color: $ma-main-color !important;
+
+            }
+          }
+
+
+        }
+
+        .author-profile {
+          .author-disc {
+            .author-bio {
+
+              color: $ma-grey-color !important;
+            }
+
+          }
+
+
+        }
+
+
+
+
+        .comments-area {
+          .comment-body {
+
+            .comment-date {
+
+
+              .date-link {
+
+                color: $ma-grey-color !important;
+
+              }
+            }
+
+
+            .comment-text {
+              color: $ma-grey-color !important;
+            }
+
+          }
+        }
+
+
+
+
+
+
+      }
+
+    }
+
+    //contact-us
+    .main-form-wraper {
+
+
+      label:not(.lbl-for-checkbox) {
+        color: $ma-grey-color;
+
+      }
+
+      .lbl-for-checkbox {
+        color: $ma-grey-color;
+      }
+
+      input[type=email],
+      input[type=text],
+      input[type=password],
+      input[type=url],
+      input[type=search],
+      input[type=number],
+      textarea {
+
+        color: $ma-grey-color !important;
+
+      }
+
+
+    }
+
+    .contact-info {
+      .info-text {
+        color: $ma-grey-color !important;
+        opacity: .85 !important;
+
+        .link {
+          color: $ma-grey-color !important;
+          opacity: .85 !important;
+
+          &:hover {
+            color: $ma-white-color !important;
+            opacity: 1 !important;
+          }
+        }
+      }
+
+
+
+    }
+
+
+    //FAQ
+
+
+    // our-team
+    .our-team {
+      .tm-member-card {
+        .tm-details {
+          .tm-role {
+            color: $ma-white-color;
+          }
+        }
+      }
+    }
+
+    //services
+    .service-title {
+      color: $ma-grey-color !important;
+    }
+
+    .service-text {
+      color: rgba($ma-grey-color, .75) !important;
+    }
+
+    .services-boxed {
+
+      .service-box {
+        @include ma-box-shadow(0, 0, 30, 0, rgba($ma-black-color, .5));
+
+      }
+
+
+    }
+
+
+    // //Portfolio 
+    .portfolio {
+
+      .portfolio-btn-list {
+
+        .portfolio-btn {
+          color: $ma-white-color;
+          background: $transparent;
+
+          &:hover,
+          &.active {
+            color: $ma-main-color;
+
+          }
+
+        }
+      }
+
+    }
+
+    //Pricing
+    %pricing {
+      .plan {
+
+        background: $ma-extra-dark-grey-color !important;
+        // @include ma-box-shadow(0, 0, 15, 0, rgba($ma-black-color, .3));
+
+        // &:hover {
+        //   @include ma-box-shadow(0, 0, 30, 0, rgba($ma-black-color, .3));
+
+        // }
+
+
+      }
+
+      .plan-details {
+        .plan-list {
+
+          &>.plan-feat {
+            color: $ma-grey-color !important;
+          }
+        }
+      }
+
+
+    }
+
+    .pricing-2 {
+      .plan-cost {
+        background: $ma-extra-dark-grey-color !important;
+      }
+
+    }
+
+    //project Details
+    .portfolio-single {
+
+      .info-area .project-info {
+
+        .info {
+          background: $ma-black-color !important;
+
+          .title {
+            color: $ma-main-color !important;
+          }
+
+          .detail {
+            color: $ma-grey-color !important;
+          }
+
+          .sc-item {
+
+
+            .sc-icon {
+              color: $ma-white-color !important;
+            }
+          }
+        }
+      }
+
+
+
+    }
+
+    .project-heading {
+      .project-title {
+        color: $ma-white-color !important;
+      }
+    }
+
+    .sub-heading {
+      color: $ma-grey-color !important;
+    }
+
+    .project-text {
+      color: rgba($ma-grey-color, .8) !important;
+    }
+
+    .list {
+      .list-item {
+        color: rgba($ma-grey-color, .8) !important;
+      }
+    }
+
+
+
+    //about section
+    .about {
+
+      .about-title {
+        color: $ma-grey-color !important;
+      }
+
+      .first-p {
+
+        color: rgba($ma-grey-color, 1) !important;
+      }
+
+      .about-text {
+        color: rgba($ma-grey-color, .75) !important;
+      }
+
+      // .photo-banner-start,
+      // .photo-banner-end {
+
+      //   background-color: $ma-main-color;
+      //   color: $ma-white-color;
+
+      // }
+
+      .info-items {
+
+        .menu-items {
+          .info-item {
+
+            .info-title {
+              color: $ma-grey-color;
+            }
+
+            .info-text {
+              color: rgba($ma-grey-color, .75) !important;
+            }
+          }
+        }
+      }
+
+      .about-stats {
+
+        .stat-box {
+
+
+          .stat-num {
+            color: $ma-grey-color !important;
+          }
+
+          .stat-desc {
+            color: rgba($ma-grey-color, .75) !important;
+          }
+        }
+
+      }
+
+    }
+
+    //Signing
+    .signing-page {
+
+      .sining-area {
+        background-color: $ma-black-color !important;
+      }
+
+      .divider {
+        .or {
+          background-color: $ma-black-color !important;
+        }
+      }
+
+      .or-sign-up {
+        .sign-up-hint {
+          color: $ma-grey-color !important;
+        }
+      }
+
+      .agree-terms {
+        .disclaimer {
+          color: $ma-semi-dark-grey-color !important;
+        }
+
+      }
+    }
+
+
+    //Testimonials
+
+    .testimonials {
+
+      .testmonial-box {
+
+        .testimonial-content {
+          background: $ma-extra-dark-grey-color !important;
+
+          .customer-info {
+
+            .customer-name {
+              color: $ma-grey-color !important;
+            }
+
+
+          }
+
+          .testimonial-text {
+            color: $ma-grey-color !important;
+          }
+
+          .icon {
+            color: $ma-main-color !important;
+          }
+
+        }
+      }
+
+    }
+
+    // coloring classes
+
+    .section-bg-shade {
+      background: lighten($ma-black-color, 5%) !important;
+
+    }
+
+
+
+  }
+}

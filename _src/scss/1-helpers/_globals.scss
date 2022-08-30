@@ -1,0 +1,636 @@
+/*========== Start Global Rules ==========*/
+
+
+@if $direction==ltr {
+    $fontMain: "Nunito", "sans-serif";
+    $fontSecondary: "Merriweather", "sans-serif";
+}
+
+
+@else if $direction==rtl {
+    $fontMain: "Tajawal", "sans-serif";
+    $fontSecondary: "Tajawal", "sans-serif";
+}
+
+%add-line {
+    //this placeholder makes a littel line used whatever you want to seprate content 
+    display: block;
+    width: 8px;
+    height: 8px;
+    // border-radius: 50%;
+    margin: 1rem auto;
+    position: relative;
+    background: $ma-main-color;
+    border-radius: 50%;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        background: inherit;
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+    }
+
+    &:before {
+        #{$start-direction}: 1rem;
+    }
+
+    &:after {
+        #{$start-direction}: 2rem;
+    }
+}
+
+body {
+    font-family: $fontMain;
+    //the direction defined according to the dirction captured from the config-file used in top of the RTL-main.scss OR RTL-main.scss 
+    direction: $direction;
+    //the direction definedleft OR right according to the dirction captured from the config-file used in top of the RTL-main.scss OR RTL-main.scss
+    text-align: $start-direction;
+    position: relative;
+    background: $ma-white-color;
+
+}
+
+
+section {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.plain-section {
+    overflow: visible;
+    padding: 0;
+}
+
+.section-watermark {
+    position: absolute;
+    top: 0;
+    #{$start-direction}: 0;
+    transform: translate(10% * $x-axe-direction, 50%);
+    font-size: 5rem;
+    font-weight: 900;
+    color: inherit;
+    opacity: .05;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    -webkit-text-stroke: 2px;
+}
+
+.skewed-section {
+    overflow: visible;
+    position: relative;
+    margin: 2rem 0;
+
+    &::before,
+    &::after {
+        content: '';
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        #{$start-direction}: 0;
+        background: $ma-main-color;
+        transform: translateY(-50%) skewY(-1deg);
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        top: 100%;
+    }
+}
+
+
+.mega-section {
+    // this class adds some global rules to the big sections
+    padding: 6rem 0;
+
+    @include ma-sm-screens {
+        padding: 4rem 0;
+    }
+}
+
+.elf-section {
+    // this class adds some global rules to the small sections
+    padding: 4rem 0;
+
+    @include ma-sm-screens {
+        padding: 3rem 0;
+    }
+}
+
+
+
+.container {
+    @include ma-xl-screens {
+        min-width: 1170px;
+    }
+
+}
+
+.hollow-text {
+    // inherit the stroke color from the element color
+    -webkit-text-stroke-color: inherit;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: $transparent;
+}
+
+.featured-text {
+    color: $ma-main-color;
+    font-weight: bolder;
+}
+
+.tag-line {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: #{$start-direction};
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    color: $ma-extra-dark-grey-color;
+    padding-#{$end-direction}: .75rem;
+    z-index: 5;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $ma-main-color;
+        #{$start-direction}: auto;
+        #{$end-direction}: 0;
+    }
+}
+
+.line-on-center {
+    @extend %add-line;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.line-on-side {
+    // this class make the line start from the side
+    @extend %add-line;
+    margin-#{$start-direction}: 0;
+    margin-#{$end-direction}: auto;
+}
+
+.section-heading {
+    // This class defines the global rules that used for heading wrapers of any section
+    margin-bottom: 3rem;
+
+    &.pad-line {
+        .section-title {
+            position: relative;
+            display: inline-block;
+            z-index: 0;
+
+            &:before {
+                content: '';
+
+                position: absolute;
+                top: auto;
+                bottom: 0;
+                height: 30%;
+                left: 0;
+                right: 0;
+                background: $ma-main-color;
+                z-index: -1;
+            }
+        }
+    }
+
+    &.light-title {
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 500;
+
+            @include ma-md-screens {
+                font-size: 2rem;
+                font-weight: 800;
+            }
+        }
+
+
+    }
+
+    &.side-heading {
+        text-align: #{$start-direction};
+        padding-#{$end-direction}: 1.5rem;
+
+        .section-subtitle {
+            margin: 0 auto;
+        }
+
+    }
+
+    &.center-heading {
+
+        text-align: center;
+
+        .section-subtitle {
+            width: 60%;
+            margin: 0 auto;
+
+            @include ma-md-screens {
+                width: 80%;
+            }
+
+            @include ma-sm-screens {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .section-title {
+        // This placeholder class defines the global rules that used for heading elments it self of any section
+        position: relative;
+        margin-bottom: 1.25rem;
+        font-family: $fontSecondary;
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: capitalize;
+        color: $ma-extra-dark-grey-color;
+        line-height: 1.3;
+        display: inline-block;
+        z-index: 0;
+
+
+        @include ma-sm-screens {
+            font-size: 2rem;
+
+        }
+
+        @include ma-xs-screens {
+            font-size: 1.5rem;
+
+        }
+    }
+
+    .section-subtitle {
+        margin: 0 auto;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: $ma-semi-dark-grey-color;
+
+        @include ma-md-screens {
+            width: 80%;
+        }
+
+        @include ma-sm-screens {
+            width: 100%;
+            font-size: 1rem;
+
+        }
+    }
+
+
+}
+
+.title-design-element {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: $ma-main-color;
+    #{$start-direction}: -40px;
+    top: -20px;
+    border-radius: 50%;
+    bottom: 0;
+    z-index: -1;
+
+    @include ma-xs-screens {
+        width: 50px;
+        height: 50px;
+        #{$start-direction}: -20px;
+        top: -20px;
+    }
+
+
+}
+
+
+
+body {
+
+
+
+    &.overlay-is-grey {
+        .overlay-color {
+            @include add-overlay();
+            background: $ma-black-color;
+            opacity: $overlay-color-opacity-val;
+        }
+    }
+
+    &.overlay-is-main-color {
+        .overlay-color {
+            @include add-overlay();
+            background: $ma-main-color;
+            opacity: $overlay-color-opacity-val;
+        }
+    }
+
+    &.overlay-is-accent-color {
+        .overlay-color {
+            @include add-overlay();
+            background: $ma-accent-color;
+            opacity: $overlay-color-opacity-val;
+        }
+    }
+
+    &.overlay-is-linear-gradient {
+        .overlay-color {
+            @include add-overlay();
+            @include linear-gradient-bg();
+            opacity: $overlay-color-opacity-val;
+        }
+    }
+
+
+}
+
+
+.parallax {
+
+    background-attachment: fixed !important;
+}
+
+
+.overlay-image-bg {
+    @include add-overlay();
+    opacity: .05;
+    /*add  background-image value wherever you use this class to choose the custom image  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.overlay-shape-image-bg {
+    @include add-overlay();
+    /*add  background-image value wherever you use this class to choose the custom image  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .05;
+}
+
+
+.overlay-photo-image-bg {
+    @include add-overlay();
+    /*add  background-image value wherever you use this class to choose the custom image  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .05;
+}
+
+%circle-shape {
+    position: absolute;
+    z-index: -1;
+    opacity: .25;
+    border: 15px solid $ma-main-color;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    @include ma-md-screens {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+
+.circle-shape-top-start {
+    @extend %circle-shape;
+    #{$start-direction}: -80px;
+    top: -80px;
+
+    @include ma-md-screens {
+        #{$start-direction}: -40px;
+        top: -40px;
+    }
+
+}
+
+.circle-shape-bottom-end {
+    @extend %circle-shape;
+    #{$end-direction}: -80px;
+    bottom: -80px;
+
+    @include ma-md-screens {
+        #{$end-direction}: -40px;
+        bottom: -40px;
+    }
+
+}
+
+%pattern-shape {
+    position: absolute;
+    background-image: url('../assets/Images/patterns/dots-pattern-black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .1;
+    transform: rotate(30deg);
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+
+    @include ma-md-screens {
+        width: 135px;
+        height: 135px;
+    }
+}
+
+.pattern-top-end {
+    @extend %pattern-shape;
+    top: -40px;
+    #{$end-direction}: -40px;
+
+}
+
+.pattern-bottom-start {
+    @extend %pattern-shape;
+    bottom: -40px;
+    #{$start-direction}: -40px;
+}
+
+
+
+
+/*  to enable any element that previously had the .disabled-element class.  */
+
+.enabeld-element {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*  to disable any element and prevent the mouse action on it  */
+
+.disabled-element {
+    opacity: .2;
+    pointer-events: none;
+}
+
+.see-more-area {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+
+    &.btn-on-start-align {
+        text-align: #{$start-direction};
+    }
+
+}
+
+.wave-shape {
+    display: block;
+    width: 100%;
+    fill: $ma-white-color;
+}
+
+.no-borders {
+    border: none;
+    outline: none;
+}
+
+.no-box-shadow {
+    box-shadow: none !important;
+}
+
+
+
+.section-shape-divider-bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+
+    svg {
+        display: block;
+        width: 100%;
+        height: 120px;
+
+        path {
+            fill: $ma-white-color;
+        }
+    }
+
+    &.fill-shade {
+        svg {
+
+            path {
+                fill: darken($ma-white-color, 5%);
+            }
+        }
+    }
+
+}
+
+.rating-stars {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+
+    @include ma-sm-screens {
+        padding: 0 1rem;
+    }
+
+    .star-icon {
+        color: $ma-main-color;
+        font-size: .85rem;
+
+        &:not(:last-child) {
+            margin-#{$end-direction}: .5rem;
+        }
+
+        &.off {
+
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: $ma-main-color;
+            -webkit-text-stroke-width: 1px;
+        }
+    }
+
+
+}
+
+
+* {
+    &::selection {
+        background: $ma-main-color;
+        color: $ma-white-color;
+    }
+}
+
+.text-gradient-color {
+    &::selection {
+        background: $ma-main-color;
+        color: $ma-white-color;
+        -webkit-text-fill-color: $ma-white-color;
+    }
+}
+
+.start-dir-img-frame {
+    background-image: linear-gradient(140deg * $x-axe-direction, $ma-main-color, $ma-white-color);
+
+    margin-#{$end-direction}: 1.5rem;
+    border-radius: .5rem;
+
+    &>img {
+        transform: translate(12px * $x-axe-direction, 12px);
+        border-radius: .5rem;
+    }
+}
+
+.end-dir-img-frame {
+    background-image: linear-gradient(-40deg * $x-axe-direction, $ma-main-color, $ma-white-color);
+
+    margin-#{$start-direction}: 1.5rem;
+    border-radius: .5rem;
+
+    &>img {
+        transform: translate(-12px * $x-axe-direction, -12px);
+        border-radius: .5rem;
+    }
+}
+
+
+
+/*========== End Global Rules ==========*/
+
+
+// adding-padding-spaces($padding-direction ,$start,$end,$step)
+
+// @include adding-padding-spaces("left", 10, 100, 10);
+// @include adding-padding-spaces("right", 10, 100, 10);
+// @include adding-padding-spaces("top", 10, 100, 10);
+// @include adding-padding-spaces("bottom", 10, 100, 10);
+
+// @include adding-padding-spaces("x", 10, 100, 10);
+// @include adding-padding-spaces("y", 10, 100, 10);
+
+// @include adding-margin-spaces("left", 10, 100, 10);
+// @include adding-margin-spaces("right", 10, 100, 10);
+// @include adding-margin-spaces("top", 10, 100, 10);
+// @include adding-margin-spaces("bottom", 10, 100, 10);
+
+// @include adding-margin-spaces("x", 10, 100, 10);
+// @include adding-margin-spaces("y", 10, 100, 10);
+
+// @include adding-auto-margins;

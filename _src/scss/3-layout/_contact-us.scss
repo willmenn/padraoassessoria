@@ -1,0 +1,344 @@
+ //This rules serv the contact-us form and the reply-form on the post-single page   
+
+ .main-form-wraper {
+
+     %label-rules {
+         margin: 0;
+         font-size: 1rem;
+         font-weight: 600;
+         text-transform: capitalize;
+         position: absolute;
+         font-size: .95rem;
+         #{$start-direction}: 0;
+         top: 0px;
+         color: rgba($ma-extra-dark-grey-color, 1);
+         @include ma-transition(all, .3s);
+     }
+
+     %label-correct-position-while-the-input-has-text {
+         top: -30px;
+         font-size: 1rem;
+         font-weight: 600;
+         color: $ma-main-color;
+     }
+
+     .not-req {
+         display: none;
+     }
+
+     .req {
+         color: red;
+     }
+
+     .error-msg {
+         position: absolute;
+         #{$end-direction}: 0;
+         top: 0;
+         transform: translateY(50%);
+         font-size: .85rem;
+         color: red;
+         display: none;
+
+     }
+
+
+     .done-msg {
+         font-size: 1rem;
+         color: green;
+         transform: translateY(1rem);
+         @include ma-transition();
+
+         &.show {
+             visibility: visible;
+             opacity: 1;
+         }
+
+         &.hide {
+             visibility: hidden;
+             opacity: 0;
+         }
+
+     }
+
+     .input-wraper {
+         position: relative;
+         margin-bottom: 3rem;
+
+         .input-icon {
+             position: absolute;
+             #{$start-direction}: auto;
+             #{$end-direction}: .5rem;
+             top: 50%;
+             transform: translateY(-50%);
+             color: $ma-semi-dark-grey-color;
+         }
+     }
+
+     .lbl-for-checkbox {
+         margin: 0;
+         padding: 0;
+         margin-#{$start-direction}: .5rem;
+         text-transform: capitalize;
+         color: $ma-semi-dark-grey-color;
+         font-size: .85rem;
+         cursor: pointer;
+     }
+
+     input[type=email],
+     input[type=text],
+     input[type=password],
+     input[type=url],
+     input[type=search],
+     input[type=number],
+     textarea {
+         display: block;
+         width: 100%;
+         padding: .5rem;
+         outline: none;
+         border: 1px solid rgba($ma-main-color, .5);
+         @include ma-transition(all, .3s);
+         background: $transparent;
+         color: $ma-extra-dark-grey-color;
+
+         &:focus {
+             &~label {
+                 @extend %label-correct-position-while-the-input-has-text;
+             }
+         }
+
+         [type=submit] {
+             &:focus {
+                 outline: none !important;
+             }
+         }
+     }
+
+     textarea {
+         min-height: 10rem;
+     }
+
+     .keep-me-logged-in {
+         position: relative;
+         display: flex;
+         align-items: center;
+
+         .check-input {
+             -webkit-appearance: none;
+             width: 1rem;
+             height: 1rem;
+             border-radius: .25rem;
+             border: 1px solid $ma-main-color;
+             outline: none;
+             cursor: pointer;
+
+             &:checked~.icon {
+                 opacity: 1;
+                 visibility: visible;
+             }
+         }
+
+         .icon {
+             position: absolute;
+             #{$start-direction}: 2px;
+             top: 4px;
+             font-size: .75rem;
+             color: $ma-main-color;
+             opacity: 0;
+             visibility: hidden;
+             pointer-events: none;
+             @include ma-transition;
+         }
+     }
+
+     input[type=submit] {
+         outline: none;
+         border: none;
+     }
+
+     &.input-under-lined {
+         .input-wraper {
+             &.has-text {
+                 label {
+                     @extend %label-correct-position-while-the-input-has-text;
+                     top: -20px;
+                 }
+
+                 .b-border {
+                     transform: scaleX(1);
+                 }
+             }
+
+             .b-border {
+                 display: block;
+                 width: 100%;
+                 transform: scaleX(0);
+                 transform-origin: center;
+                 height: 2px;
+                 background: $ma-main-color;
+                 position: absolute;
+                 bottom: 0;
+                 #{$start-direction}: 0;
+                 z-index: 1;
+                 @include ma-transition(all, .3s);
+             }
+         }
+
+         label:not(.lbl-for-checkbox) {
+             @extend %label-rules;
+             #{$start-direction}: 0;
+             top: 0px;
+             @include ma-transition(all, .3s);
+         }
+
+         input[type=email],
+         input[type=text],
+         input[type=password],
+         input[type=url],
+         input[type=search],
+         input[type=number],
+         textarea {
+             padding: .5rem 0;
+             border: none;
+             border-bottom: 1px solid rgba($ma-main-color, .5);
+
+             &:focus {
+                 &~.b-border {
+                     transform: scaleX(1);
+                 }
+
+                 &~label:not(.lbl-for-checkbox) {
+                     @extend %label-correct-position-while-the-input-has-text;
+                     top: -20px;
+                 }
+             }
+         }
+     }
+
+     &.input-boxed {
+         padding-top: 30px;
+
+         .input-wraper {
+             &.has-text {
+                 label {
+                     @extend %label-correct-position-while-the-input-has-text;
+                 }
+             }
+         }
+
+         label:not(.lbl-for-checkbox) {
+             @extend %label-rules;
+             font-size: 1rem;
+             font-weight: 600;
+             top: -30px;
+             #{$start-direction}: 0;
+             @include ma-transition(all, .3s);
+         }
+
+         input[type=email],
+         input[type=text],
+         input[type=password],
+         input[type=url],
+         input[type=search],
+         input[type=number],
+         textarea {
+             &:focus {
+                 border-color: rgba($ma-main-color, 1);
+
+                 &~label:not(.lbl-for-checkbox) {
+                     @extend %label-correct-position-while-the-input-has-text;
+                 }
+             }
+         }
+     }
+
+ }
+
+ .contact-info {
+
+     .map-box {
+         .mapouter {
+             position: relative;
+             text-align: #{$end-direction};
+             height: 500px;
+             width: 100%;
+
+             .gmap_canvas {
+                 overflow: hidden;
+                 background: none !important;
+                 height: 500px;
+                 width: 100%;
+             }
+
+             .map-iframe {
+                 width: 100%;
+                 height: 500px;
+                 border: none;
+             }
+         }
+
+         @include ma-lg-screens {
+             margin-bottom: 3rem;
+         }
+     }
+
+     .info-section {
+         padding: 2rem 0;
+     }
+
+
+     .info-panel {
+         margin-bottom: 2rem;
+         display: flex;
+         align-items: start;
+     }
+
+
+
+     .info-title {
+         text-transform: capitalize;
+         font-family: $fontSecondary;
+         font-size: 1.25rem;
+         font-weight: 900;
+         margin-bottom: 1.25rem;
+         color: $ma-main-color;
+
+         .icon {
+
+             color: $ma-main-color;
+             font-size: 1.5rem;
+             margin-#{$end-direction}: 1rem;
+         }
+     }
+
+
+     .info-text {
+         text-transform: capitalize;
+         font-size: .9rem;
+         font-weight: 300;
+         color: $ma-semi-dark-grey-color;
+         margin: 0;
+         margin-bottom: .5rem;
+     }
+
+     .link {
+         display: block;
+         text-transform: lowercase;
+         text-decoration: none;
+         font-size: .9rem;
+         font-weight: 300;
+         color: $ma-semi-dark-grey-color;
+         margin-bottom: .5rem;
+
+         &:hover {
+             color: $ma-black-color;
+         }
+     }
+ }
+
+ .contact-us-image {
+     padding-top: 1.25rem;
+     padding-bottom: 2.5rem;
+     text-align: center;
+ }
+
+ /*End user-form Rules*/

@@ -1,0 +1,297 @@
+.portfolio {
+    overflow: hidden;
+    position: relative;
+
+    .portfolio-wraper {
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-btn-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+
+
+        .portfolio-btn {
+            position: relative;
+            margin: 5px;
+            padding: .5rem 1rem;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 700;
+            z-index: 1;
+            color: $ma-extra-dark-grey-color;
+            background: $transparent;
+            cursor: pointer;
+            @include ma-transition(all, .3s);
+
+            &:first-child {
+                padding-#{$start-direction}: 0;
+            }
+
+            &:last-child {
+                padding-#{$end-direction}: 0;
+            }
+
+            &:not(:last-child) {
+                &::before {
+                    content: "";
+                    width: .5rem;
+                    height: .5rem;
+                    background-color: $ma-main-color;
+                    position: absolute;
+                    #{$start-direction}: 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                }
+            }
+
+            &:hover,
+            &.active {
+                color: $ma-main-color;
+
+            }
+
+
+        }
+    }
+
+    .portfolio-group {
+        direction: ltr; //allways  to remove littel gaps between the portfolio images
+        position: relative;
+    }
+
+    .portfolio-img-link {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        outline: none;
+        z-index: 1;
+        @include ma-transition();
+    }
+
+    .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        // padding: .25rem;
+        padding-#{$end-direction}: .75rem;
+        margin-bottom: .75rem;
+
+        @include ma-xs-screens {
+            padding-#{$end-direction}: 0;
+        }
+
+    }
+
+    .item {
+        overflow: hidden;
+        position: relative;
+
+        .overlay-color {
+            z-index: 2;
+            opacity: 0;
+        }
+
+        &:hover {
+            .item-info {
+                transform: scale(1);
+
+                opacity: 1;
+            }
+
+            .overlay-color {
+                opacity: $overlay-color-opacity-val;
+
+            }
+
+            .portfolio-img {
+                transform: scale(1.05);
+                transform-origin: center;
+            }
+
+            .icon {
+                opacity: 1;
+                top: 50%;
+                transform: translate(-50% * $x-axe-direction, -50%);
+            }
+        }
+
+        .portfolio-img {
+            display: block;
+            min-width: 100%;
+            object-fit: cover;
+            height: 350px;
+            @include ma-transition(all, 1s, ease);
+
+
+        }
+
+        .item-info {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            #{$start-direction}: 5%;
+            top: 5%;
+            transform: scale(0);
+            transform-origin: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+            background-color: rgba($ma-black-color, .75);
+            pointer-events: none;
+            @include ma-transition(all, .3s, ease-out);
+            z-index: 5;
+
+            .icon {
+                opacity: 1;
+                bottom: 0%;
+                top: auto;
+            }
+
+            .info-title {
+                display: block;
+                font-size: 1.25rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: $ma-white-color;
+
+            }
+
+            .tags-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+            }
+
+            .tag-item {
+                display: inline-block;
+                position: relative;
+                margin-#{$end-direction}: 1rem;
+
+                &:not(:first-child) {
+                    margin-#{$start-direction}: 1rem;
+                }
+
+                &:not(:last-child) {
+                    &::before {
+                        content: "";
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: $ma-white-color;
+                        position: absolute;
+                        #{$start-direction}: 100%;
+                        top: 50%;
+                        margin: 0 1rem;
+                        transform: translate(-50%, -50%);
+
+                    }
+                }
+
+            }
+
+
+            .tag-link {
+                display: inline-block;
+                font-size: 1rem;
+                text-transform: capitalize;
+                color: $ma-white-color;
+                text-decoration: none !important;
+            }
+
+        }
+
+        .icon {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 3rem;
+            background: rgba($ma-main-color, .8);
+            color: $ma-white-color;
+            font-size: 1.25rem;
+            #{$start-direction}: 50%;
+            top: 25%;
+            transform: translate(-50% * $x-axe-direction, 0);
+            margin: 0;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 5;
+            @include ma-transition(all, .25s);
+        }
+    }
+
+
+
+    &-grid-rounded {
+        .item {
+            border-radius: .5rem;
+            overflow: hidden;
+        }
+
+    }
+
+    &-blocks {
+        .item {
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+    }
+
+    &-grid-no-gaps {
+        .portfolio-item {
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+
+
+        .item {
+            border-radius: 0;
+            overflow: hidden;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        //overriding swiper rules
+
+        @include adding-arrows-styling;
+
+
+    }
+
+
+
+
+}
+
+.portfolio-slider {
+    .item {
+        .portfolio-img {
+            height: 450px;
+
+            @include ma-sm-screens {
+                height: 400px;
+            }
+        }
+    }
+
+
+
+}

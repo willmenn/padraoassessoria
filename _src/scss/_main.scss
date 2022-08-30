@@ -1,0 +1,122 @@
+/*===================================================
+
+Project: consulto - landing page 
+Auther: Amin-Themes 
+Version: 1.0
+Last change: 20 Novmber 2020 
+Template Description: HTML5 landing page Template
+
+====================================================*/
+
+/*==
+01- global-rules and helper classes
+02- page-header
+03- page-hero section
+04- services-section
+05- about section
+06- portfolio section
+07- our-team section
+08- our-clients section
+09- faq section
+10- testimonials section
+11- contact-us section
+12- take-action section
+13- page-footer section
+14- demos page
+15- Coloring classes 
+16- Dark Theme Rules
+===*/
+
+
+
+
+/* 01- start global, helper classes , Components Rules*/
+@import '1-helpers/_variables';
+@import '1-helpers/_mixins';
+@import '1-helpers/_globals';
+@import '1-helpers/_custom-animations';
+
+@import '2-components/_buttons';
+@import '2-components/_tabs';
+@import '2-components/_loading-screen';
+/*ُ 01- End global, helper classes , components Rules */
+
+
+
+
+/*02- Start .page-header Rules    */
+@import '3-layout/_page-header';
+/*02- End .page-header Rules    */
+
+
+
+/*  03- Start .page-hero Rules   */
+@import '3-layout/_page-hero';
+/*  03- End .page-hero Rules   */
+
+
+/*   04- Start .services Section Rules    */
+@import '3-layout/_services';
+/*   04- End .services Section Rules   */
+
+
+/*  05- Start about Section   */
+@import '3-layout/_about';
+/*  05- End about Section    */
+
+/*   06- Start portfolio Section  */
+@import '3-layout/_portfolio';
+/*   06- End portfolio Section  */
+
+
+/*  07- Start our-team Section   */
+@import '3-layout/_our-team';
+/*  07- End our-team Section   */
+
+
+/*  08- Start our-clients Section   */
+@import '3-layout/_our-clients';
+/*  08- End our-clients Section   */
+
+
+/*  09- Start faq Section   */
+@import '3-layout/_faq';
+/*  09- End faq Section  */
+
+/*  10- Start testimonials Section   */
+@import '3-layout/_testimonials';
+/*  10- End testimonials Section   */
+
+
+/*   11- Start contact-us Section  */
+@import '3-layout/_contact-us';
+/*   11- End contact-us Section  */
+
+
+/*  12- Start take-action Section   */
+@import '3-layout/_take-action';
+/*  12- End take-action Section   */
+
+/*   13- Start page-footer Section  */
+@import '3-layout/_page-footer';
+/*   13- End page-footer Section  */
+
+
+/* 14-  Start demos section Rules  */
+@import '3-layout/_demos';
+/* 14- End  demos section Rules    */
+
+
+
+
+
+
+
+/*   15- Start coloring classes  */
+@import '1-helpers/_coloring-classes';
+/*   15- End coloring classes  */
+
+
+/*   16- Start dark theme rules  */
+@import '1-helpers/_dark-theme';
+/*   16- End dark theme rules  */

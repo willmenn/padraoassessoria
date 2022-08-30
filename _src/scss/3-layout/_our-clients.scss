@@ -1,0 +1,48 @@
+.our-clients {
+    background: $ma-extra-dark-grey-color;
+
+    .clients-logos {
+        text-align: center;
+    }
+
+    .logo {
+        max-height: 75px;
+
+        @include ma-transition();
+    }
+
+    &-blocks {
+        background: $ma-extra-dark-grey-color;
+
+
+        .section-heading {
+            .section-title {
+                color: $ma-grey-color;
+            }
+        }
+
+        .blocks-row {
+            margin-bottom: -30px;
+        }
+
+        .client-block {
+            padding: 1.25rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            @include ma-transition();
+
+            &:hover {
+                transform: translateY(-10px)
+            }
+
+
+            @include ma-sm-screens {
+                padding: 2rem;
+            }
+        }
+    }
+
+
+}

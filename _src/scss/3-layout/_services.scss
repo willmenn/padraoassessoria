@@ -1,0 +1,123 @@
+%services-rules {
+    .overlay-photo-image-bg {
+        background-image: url('../assets/Images/sections-bg-images/services.jpg');
+        opacity: .25;
+
+    }
+
+    .service-box {
+        position: relative;
+        z-index: 1;
+        padding: 4rem 2rem;
+        @include ma-transition(all, .3s);
+        z-index: 0;
+    }
+
+    .service-icon {
+        margin-bottom: 1.5rem;
+        @include ma-transition(all, .3s);
+    }
+
+    .font-icon {
+        display: inline-block;
+        font-size: 2.5rem;
+        color: $ma-main-color;
+        transform-origin: center;
+        // @include ma-transition(all, .3s);
+    }
+
+
+    .service-num {
+        font-size: 5rem;
+        font-weight: 900;
+        position: absolute;
+        top: 1rem;
+        #{$end-direction}: 2rem;
+        color: $ma-white-color;
+        opacity: 0;
+        line-height: 1;
+    }
+
+    .img-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .service-title {
+        text-transform: capitalize;
+        font-size: 1.35rem;
+        font-weight: 700;
+        font-family: $fontSecondary;
+        color: $ma-extra-dark-grey-color;
+        margin-bottom: 1rem;
+        // @include ma-transition(all, .3s);
+    }
+
+    .service-text {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin: 0;
+        color: $ma-semi-dark-grey-color;
+        // @include ma-transition(all, .3s);
+    }
+
+    &.lifted-up-box {
+        .services-row {
+            @include ma-md-screens {
+                padding: 6rem 0;
+            }
+        }
+
+        .service-box {
+            margin-top: -8rem;
+
+            @include ma-md-screens {
+                margin-top: 0rem;
+            }
+        }
+    }
+}
+
+.services-boxed {
+    @extend %services-rules;
+
+    .services-row {
+        margin-bottom: 1rem;
+    }
+
+    .service-box {
+        margin-bottom: 2rem;
+        border-radius: .5rem;
+        padding: 2rem;
+        border: 1px solid rgba($ma-main-color, .35);
+        @include ma-box-shadow(0, 0, 10, 0, rgba($ma-black-color, .1));
+
+
+        @include ma-md-screens {
+            padding: 2rem;
+
+        }
+
+        &:hover,
+        &.featured {
+            background-color: $ma-main-color;
+
+            .service-num {
+                opacity: .1;
+            }
+
+            .service-title,
+            .service-text,
+            .font-icon,
+            .read-more {
+                color: $ma-white-color;
+            }
+
+        }
+    }
+}
