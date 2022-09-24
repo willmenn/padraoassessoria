@@ -35,7 +35,7 @@ Template Description: HTML5 landing page Template
   height: 8px;
   margin: 1rem auto;
   position: relative;
-  background: #228058;
+  background: #222480;
   border-radius: 50%;
 }
 
@@ -101,7 +101,7 @@ section {
   height: 70px;
   position: absolute;
   left: 0;
-  background: #228058;
+  background: #222480;
   transform: translateY(-50%) skewY(-1deg);
 }
 
@@ -146,7 +146,7 @@ section {
 }
 
 .featured-text {
-  color: #228058;
+  color: #222480;
   font-weight: bolder;
 }
 
@@ -174,7 +174,7 @@ section {
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #228058;
+  background-color: #222480;
   left: auto;
   right: 0;
 }
@@ -207,7 +207,7 @@ section {
   height: 30%;
   left: 0;
   right: 0;
-  background: #228058;
+  background: #222480;
   z-index: -1;
 }
 
@@ -303,7 +303,7 @@ section {
   position: absolute;
   width: 80px;
   height: 80px;
-  background-color: #228058;
+  background-color: #222480;
   left: -40px;
   top: -20px;
   border-radius: 50%;
@@ -342,7 +342,7 @@ body.overlay-is-main-color .overlay-color {
   z-index: -1;
   display: block;
   transition: all 0.5s ease-in-out 0s;
-  background: #228058;
+  background: #222480;
   opacity: 0.5;
 }
 
@@ -368,7 +368,7 @@ body.overlay-is-linear-gradient .overlay-color {
   z-index: -1;
   display: block;
   transition: all 0.5s ease-in-out 0s;
-  background: -webkit-linear-gradient(45deg, #0a6336, #228058);
+  background: -webkit-linear-gradient(45deg, #0a6336, #222480);
   opacity: 0.5;
 }
 
@@ -428,7 +428,7 @@ body.overlay-is-linear-gradient .overlay-color {
   position: absolute;
   z-index: -1;
   opacity: .25;
-  border: 15px solid #228058;
+  border: 15px solid #222480;
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -565,7 +565,7 @@ body.overlay-is-linear-gradient .overlay-color {
 }
 
 .rating-stars .star-icon {
-  color: #228058;
+  color: #222480;
   font-size: .85rem;
 }
 
@@ -575,23 +575,23 @@ body.overlay-is-linear-gradient .overlay-color {
 
 .rating-stars .star-icon.off {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #228058;
+  -webkit-text-stroke-color: #222480;
   -webkit-text-stroke-width: 1px;
 }
 
 *::selection {
-  background: #228058;
+  background: #222480;
   color: #fff;
 }
 
 .text-gradient-color::selection {
-  background: #228058;
+  background: #222480;
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
 
 .start-dir-img-frame {
-  background-image: linear-gradient(140deg, #228058, #fff);
+  background-image: linear-gradient(140deg, #222480, #fff);
   margin-right: 1.5rem;
   border-radius: .5rem;
 }
@@ -602,7 +602,7 @@ body.overlay-is-linear-gradient .overlay-color {
 }
 
 .end-dir-img-frame {
-  background-image: linear-gradient(-40deg, #228058, #fff);
+  background-image: linear-gradient(-40deg, #222480, #fff);
   margin-left: 1.5rem;
   border-radius: .5rem;
 }
@@ -662,27 +662,27 @@ body.overlay-is-linear-gradient .overlay-color {
 
 .ma-btn-primary {
   color: #fff;
-  background: #228058;
-  border-color: #228058;
+  background: #222480;
+  border-color: #222480;
 }
 
 .ma-btn-primary:hover {
-  color: #228058;
+  color: #222480;
   background: rgba(0, 0, 0, 0);
-  border-color: #228058;
+  border-color: #222480;
 }
 
 .ma-btn-secondary {
   /**/
   border: 2px solid;
-  color: #228058;
+  color: #222480;
   background: rgba(0, 0, 0, 0);
-  border-color: #228058;
+  border-color: #222480;
 }
 
 .ma-btn-secondary:hover {
   color: #fff;
-  background: #228058;
+  background: #222480;
 }
 
 .play-btn-col-dir, .play-btn-row-dir {
@@ -708,7 +708,7 @@ body.overlay-is-linear-gradient .overlay-color {
   border-radius: 50%;
   padding: 5px;
   cursor: pointer;
-  background: #228058;
+  background: #222480;
   transition: all 0.5s ease-in-out 0s;
   display: flex;
   align-items: center;
@@ -726,7 +726,7 @@ body.overlay-is-linear-gradient .overlay-color {
   top: 0;
   left: 0;
   border-radius: 50%;
-  background: #228058;
+  background: #222480;
   animation: anim-pulses infinite 2s linear;
   z-index: -1;
 }
@@ -860,26 +860,26 @@ body.overlay-is-linear-gradient .overlay-color {
 .download-apps-area .btn-app-store.btn-main-color-bg,
 .download-apps-area .btn-google-play.btn-main-color-bg {
   border: 2px solid #fff;
-  background-color: #228058;
+  background-color: #222480;
   color: #fff !important;
 }
 
 .download-apps-area .btn-app-store.btn-main-color-bg:hover,
 .download-apps-area .btn-google-play.btn-main-color-bg:hover {
   background-color: #fff;
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 .download-apps-area .btn-app-store.btn-white-bg,
 .download-apps-area .btn-google-play.btn-white-bg {
-  border: 2px solid #228058;
+  border: 2px solid #222480;
   background-color: #fff;
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 .download-apps-area .btn-app-store.btn-white-bg:hover,
 .download-apps-area .btn-google-play.btn-white-bg:hover {
-  background-color: #228058;
+  background-color: #222480;
   color: #fff !important;
 }
 
@@ -895,7 +895,7 @@ body.overlay-is-linear-gradient .overlay-color {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #228058;
+  background: #222480;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -909,7 +909,7 @@ body.overlay-is-linear-gradient .overlay-color {
 }
 
 .dir-row .sc-list .sc-item:hover .sc-icon, .dir-col .sc-list .sc-item:hover .sc-icon, .sc-flat .sc-list .sc-item:hover .sc-icon {
-  color: #228058;
+  color: #222480;
 }
 
 .dir-row .sc-list .sc-link, .dir-col .sc-list .sc-link, .sc-flat .sc-list .sc-link {
@@ -978,11 +978,11 @@ body.overlay-is-linear-gradient .overlay-color {
 }
 
 .sc-flat .sc-list .sc-item:hover .sc-icon {
-  color: #228058;
+  color: #222480;
 }
 
 .sc-flat .sc-list .sc-item .sc-icon {
-  color: #228058;
+  color: #222480;
 }
 
 .sc-size-40 .sc-item {
@@ -1019,7 +1019,7 @@ body.overlay-is-linear-gradient .overlay-color {
   justify-content: center;
   font-size: 1.5rem;
   color: #fff;
-  background: #228058;
+  background: #222480;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
   width: 3rem;
@@ -1085,7 +1085,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 .read-more {
   text-transform: capitalize;
-  color: #228058;
+  color: #222480;
   font-weight: 600;
   position: relative;
   display: inline-flex;
@@ -1094,7 +1094,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .read-more:hover {
-  color: #228058;
+  color: #222480;
   text-decoration: none;
 }
 
@@ -1135,7 +1135,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   border-radius: 1rem;
   bottom: 0;
   height: 3px;
-  background-color: #228058;
+  background-color: #222480;
   will-change: left, width;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -1158,7 +1158,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .ma-tabs .tab-link.active, .ma-tabs .tab-link:hover {
-  color: #228058;
+  color: #222480;
   opacity: 1;
 }
 
@@ -1205,14 +1205,14 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .ma-tabs .switch .switch-btns-list .switch-btn:hover {
-  border-color: #228058;
-  color: #228058;
+  border-color: #222480;
+  color: #222480;
 }
 
 .ma-tabs .switch .switch-btns-list .switch-btn.active {
   color: #fff;
-  background-color: #228058;
-  border-color: #228058;
+  background-color: #222480;
+  border-color: #222480;
 }
 
 .ma-tabs .switch .toggle-btn {
@@ -1220,7 +1220,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   height: 30px;
   display: inline-block;
   position: relative;
-  background-color: #228058;
+  background-color: #222480;
   border-radius: 2rem;
   z-index: 0;
   -webkit-appearance: none;
@@ -1238,7 +1238,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   position: absolute;
   left: 0;
   top: 0;
-  border: 0.25rem solid #228058;
+  border: 0.25rem solid #222480;
   background-color: #fff;
   width: 30px;
   height: 30px;
@@ -1290,7 +1290,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   height: 18px;
   border-radius: 100%;
   display: inline-block;
-  background: #228058;
+  background: #222480;
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
@@ -1348,7 +1348,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   font-weight: 600;
   max-width: 150px;
   text-transform: capitalize;
-  color: #228058;
+  color: #222480;
 }
 
 .page-header .navbar-brand .brand-logo {
@@ -1441,7 +1441,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
     top: 0;
     padding: 0;
     padding-bottom: 1.5rem;
-    background-color: #228058;
+    background-color: #222480;
     overflow-x: hidden;
   }
 }
@@ -1527,7 +1527,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   .page-header .nav-link:hover {
     padding-left: 1.5rem;
     background-color: #fff;
-    color: #228058;
+    color: #222480;
   }
 }
 
@@ -1536,7 +1536,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   font-size: 1rem;
   font-weight: 700;
   background-color: #fff;
-  color: #228058;
+  color: #222480;
   border-color: rgba(0, 0, 0, 0);
   margin-left: 1rem;
 }
@@ -1570,9 +1570,9 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
     transform: translateY(50%);
   }
   .page-header .header-cta:hover {
-    background-color: #228058;
+    background-color: #222480;
     color: #fff;
-    border-color: #228058;
+    border-color: #222480;
   }
 }
 
@@ -1651,7 +1651,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
     visibility: visible;
     opacity: 1;
     display: none;
-    background-color: #228058;
+    background-color: #222480;
     transition: none;
   }
 }
@@ -1662,7 +1662,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .has-sub-menu > .sub-menu .sub-menu-link {
-  color: #228058;
+  color: #222480;
   padding: 1rem 1rem 1rem 1.5rem !important;
   transition: all 0.25s ease-in-out 0s;
 }
@@ -1673,7 +1673,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 .has-sub-menu > .sub-menu .sub-menu-link:hover {
   color: #fff;
-  background-color: #228058;
+  background-color: #222480;
   padding-left: 2rem !important;
 }
 
@@ -1688,7 +1688,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
     color: #f1f1f1;
   }
   .has-sub-menu > .sub-menu .sub-menu-link:hover {
-    color: #228058;
+    color: #222480;
     background-color: #fff;
   }
 }
@@ -1775,7 +1775,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .header-call-us .call-us-link:hover {
-  color: #228058;
+  color: #222480;
 }
 
 .header-call-us .call-us-link .icon {
@@ -1922,7 +1922,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 .header-search-box .search-form .search-input {
   border: none;
-  border-bottom: 2px solid #228058;
+  border-bottom: 2px solid #222480;
   font-size: 2.5rem;
   outline: none;
   color: #fff;
@@ -1949,12 +1949,12 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   outline: none;
   border: none;
   background: transparent;
-  color: #228058;
+  color: #222480;
   font-size: 1.5rem;
 }
 
 .header-stand-out {
-  background-color: #228058;
+  background-color: #222480;
   border-color: rgba(0, 0, 0, 0);
   box-shadow: 0px 1px 30px 0px rgba(37, 37, 37, 0.25);
 }
@@ -2044,7 +2044,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .dark-header.header-stand-out .header-cta {
-  background-color: #228058;
+  background-color: #222480;
   color: #fff;
 }
 
@@ -2112,7 +2112,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .light-header.header-stand-out .navbar-brand .brand-name {
-  color: #228058;
+  color: #222480;
   margin-left: .5rem;
 }
 
@@ -2151,22 +2151,22 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .light-header.header-stand-out .header-cta {
-  background-color: #228058;
+  background-color: #222480;
   color: #fff;
 }
 
 .light-header.header-stand-out .header-cta:hover {
   background-color: rgba(0, 0, 0, 0);
-  color: #228058;
-  border-color: #228058;
+  color: #222480;
+  border-color: #222480;
 }
 
 .light-header.header-stand-out .call-us-banner .icon {
-  color: #228058;
+  color: #222480;
 }
 
 .light-header.header-stand-out .call-us-banner .text .cta-text {
-  color: #228058;
+  color: #222480;
 }
 
 .light-header.header-stand-out .call-us-banner .text .call-us-link {
@@ -2339,17 +2339,17 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   outline: none !important;
   border-radius: .25rem;
   margin: 0 auto;
-  background: #228058;
+  background: #222480;
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
-  border: 2px solid #228058 !important;
+  border: 2px solid #222480 !important;
 }
 
 .page-hero .lead-generation-area .subscribe-btn:hover {
   background: rgba(0, 0, 0, 0);
-  color: #228058;
-  border-color: #228058;
+  color: #222480;
+  border-color: #222480;
 }
 
 .page-hero .lead-generation-area label,
@@ -2367,7 +2367,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .page-hero .lead-generation-area input:not([type="submit"])::placeholder {
-  color: #228058;
+  color: #222480;
   opacity: .5;
 }
 
@@ -2379,7 +2379,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .page-hero .lead-generation-area .multi-field-form .form-heading {
   margin-bottom: 2rem;
   color: #252525;
-  border-bottom: 2px solid #228058;
+  border-bottom: 2px solid #222480;
   padding-bottom: .75rem;
   text-transform: capitalize;
   font-size: 1.5rem;
@@ -2398,7 +2398,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .page-hero .lead-generation-area .multi-field-form input:not([type="submit"])::placeholder {
-  color: #228058;
+  color: #222480;
   opacity: .5;
 }
 
@@ -2444,9 +2444,9 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .page-hero .lead-generation-area .single-field-form .subscribe-btn:hover {
-  background: #228058;
+  background: #222480;
   color: #fff;
-  border-color: #228058;
+  border-color: #222480;
 }
 
 @media (max-width: 767px) {
@@ -2458,7 +2458,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .page-hero .lead-generation-area .highlight {
-  color: #228058;
+  color: #222480;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -2468,8 +2468,8 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   z-index: 0;
   min-height: 100vh;
   padding: 120px 0;
-  background: #228058;
-  background: -webkit-linear-gradient(45deg, #0a6336, #228058);
+  background: #222480;
+  background: -webkit-linear-gradient(45deg, #0a6336, #222480);
 }
 
 @media (max-width: 991px) {
@@ -2551,14 +2551,14 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 .page-hero .cta-links-area .cta-link:hover {
   background: #fff;
-  color: #228058;
+  color: #222480;
   border-color: #fff;
 }
 
 .page-hero .cta-links-area .cta-link-primary {
-  background: #228058;
+  background: #222480;
   color: #fff;
-  border-color: #228058;
+  border-color: #222480;
 }
 
 .page-hero .cta-links-area .cta-link-primary:hover {
@@ -2601,7 +2601,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .services-boxed .font-icon {
   display: inline-block;
   font-size: 2.5rem;
-  color: #228058;
+  color: #222480;
   transform-origin: center;
 }
 
@@ -2677,7 +2677,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .services-boxed .service-box:hover, .services-boxed .service-box.featured {
-  background-color: #228058;
+  background-color: #222480;
 }
 
 .services-boxed .service-box:hover .service-num, .services-boxed .service-box.featured .service-num {
@@ -2956,7 +2956,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .about .text-area .cta-area .signature .poss {
   display: block;
   font-size: .75rem;
-  color: #228058;
+  color: #222480;
   margin-top: -.5rem;
   text-transform: capitalize;
 }
@@ -3050,7 +3050,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .about .info-items .menu-items .info-item .info-icon {
   margin-right: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #228058;
+  color: #222480;
   font-size: 2.5rem;
   transition: transform 0.3s ease-in-out 0s;
 }
@@ -3089,7 +3089,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .about .info-items-grid .info-item .item-title .item-icon {
   margin-right: .75rem;
   font-size: 2.25rem;
-  color: #228058;
+  color: #222480;
 }
 
 .about .info-items-grid .info-item .item-text {
@@ -3119,7 +3119,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 .about .about-stats .stat-box .stat-num .sign {
   font-size: 2.5rem;
-  color: #228058;
+  color: #222480;
   font-weight: 600;
   position: absolute;
   left: 0;
@@ -3267,7 +3267,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   content: "";
   width: .5rem;
   height: .5rem;
-  background-color: #228058;
+  background-color: #222480;
   position: absolute;
   left: 100%;
   top: 50%;
@@ -3275,7 +3275,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .portfolio .portfolio-btn-list .portfolio-btn:hover, .portfolio .portfolio-btn-list .portfolio-btn.active {
-  color: #228058;
+  color: #222480;
 }
 
 .portfolio .portfolio-group {
@@ -3464,7 +3464,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   justify-content: center;
   font-size: 1.5rem;
   color: #fff;
-  background: #228058;
+  background: #222480;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -3580,7 +3580,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 0;
-  color: #228058;
+  color: #222480;
 }
 
 .our-team .tm-member-card .tm-details .tm-role {
@@ -3666,7 +3666,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .faq .faq-accordion .card-header {
   position: relative;
   background: #252525;
-  border-bottom: 2px solid #228058;
+  border-bottom: 2px solid #222480;
 }
 
 .faq .faq-accordion .card-header .faq-btn {
@@ -3790,7 +3790,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   margin: 0 auto;
   padding: 4rem 0;
   border: 1px solid rgba(34, 128, 88, 0.5);
-  border-bottom: 0.25rem solid #228058;
+  border-bottom: 0.25rem solid #222480;
 }
 
 @media (max-width: 575px) {
@@ -3846,7 +3846,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   display: block;
   font-size: 6rem;
   opacity: .2;
-  color: #228058;
+  color: #222480;
   transform: scaleX(-1);
 }
 
@@ -3863,7 +3863,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .testimonials.off-grid .testmonial-box .testimonial-content .customer-info img, .testimonials.stack .testmonial-box .testimonial-content .customer-info img {
   width: 4.5rem;
   height: 4.5rem;
-  border: 3px solid #228058;
+  border: 3px solid #222480;
   border-radius: 50%;
   margin-bottom: .75rem;
 }
@@ -3893,7 +3893,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .testimonials.off-grid .testmonial-box .testimonial-content .customer-info .customer-details .customer-role,
 .testimonials.stack .testmonial-box .testimonial-content .customer-info .customer-details .customer-role {
   font-size: 1rem;
-  color: #228058;
+  color: #222480;
 }
 
 .testimonials .swiper-container {
@@ -3938,7 +3938,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   height: 80%;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #228058;
+  background-color: #222480;
   border-radius: 1rem;
   right: 0;
 }
@@ -3988,7 +3988,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   justify-content: center;
   font-size: 1.5rem;
   color: #fff;
-  background: #228058;
+  background: #222480;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
   top: 0;
@@ -4049,7 +4049,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   top: -30px;
   font-size: 1rem;
   font-weight: 600;
-  color: #228058;
+  color: #222480;
 }
 
 .main-form-wraper .not-req {
@@ -4153,7 +4153,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   width: 1rem;
   height: 1rem;
   border-radius: .25rem;
-  border: 1px solid #228058;
+  border: 1px solid #222480;
   outline: none;
   cursor: pointer;
 }
@@ -4168,7 +4168,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   left: 2px;
   top: 4px;
   font-size: .75rem;
-  color: #228058;
+  color: #222480;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -4194,7 +4194,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   transform: scaleX(0);
   transform-origin: center;
   height: 2px;
-  background: #228058;
+  background: #222480;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -4259,7 +4259,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .main-form-wraper.input-boxed input[type=search]:focus,
 .main-form-wraper.input-boxed input[type=number]:focus,
 .main-form-wraper.input-boxed textarea:focus {
-  border-color: #228058;
+  border-color: #222480;
 }
 
 .contact-info .map-box .mapouter {
@@ -4304,11 +4304,11 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   font-size: 1.25rem;
   font-weight: 900;
   margin-bottom: 1.25rem;
-  color: #228058;
+  color: #222480;
 }
 
 .contact-info .info-title .icon {
-  color: #228058;
+  color: #222480;
   font-size: 1.5rem;
   margin-right: 1rem;
 }
@@ -4346,12 +4346,12 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 /*   11- End contact-us Section  */
 /*  12- Start take-action Section   */
 .take-action {
-  background: #228058;
+  background: #222480;
   padding: 150px 0;
 }
 
 .take-action .wave-shape {
-  background: #228058;
+  background: #222480;
 }
 
 .take-action .section-heading .section-title {
@@ -4374,8 +4374,8 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .take-action .ma-btn-primary:hover {
-  background-color: #228058;
-  border-color: #228058;
+  background-color: #222480;
+  border-color: #222480;
   color: #fff;
 }
 
@@ -4449,7 +4449,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   text-transform: capitalize;
   cursor: pointer;
   background: #fff;
-  color: #228058;
+  color: #222480;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -4549,9 +4549,9 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .subscribe .subscribe-btn:hover {
-  background: #228058;
+  background: #222480;
   color: #fff;
-  border-color: #228058;
+  border-color: #222480;
 }
 
 @media (max-width: 575px) {
@@ -4668,7 +4668,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   text-align: center;
   margin-right: .5rem;
   vertical-align: middle;
-  color: #228058;
+  color: #222480;
 }
 
 .contact-info-card .info {
@@ -4681,7 +4681,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .contact-info-card .info:hover {
-  color: #228058;
+  color: #222480;
   transform: translateX(0.25rem);
 }
 
@@ -4709,7 +4709,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .footer-menu-link:hover {
-  color: #228058;
+  color: #222480;
   text-decoration: none;
   transform: translateX(0.25rem);
 }
@@ -4729,7 +4729,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 .copyrights .creadits .link {
   font-weight: 600;
-  color: #228058;
+  color: #222480;
   text-decoration: none;
 }
 
@@ -4755,7 +4755,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .dark-color-footer .terms-links,
 .dark-color-footer .copyrights .creadits .link,
 .dark-color-footer .terms-links > a:hover {
-  color: #228058;
+  color: #222480;
 }
 
 .dark-color-footer .footer-text-about-us,
@@ -4782,7 +4782,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .light-color-footer .terms-links,
 .light-color-footer .copyrights .creadits .link,
 .light-color-footer .sc-wraper .sc-list .sc-item:hover .sc-icon {
-  color: #228058;
+  color: #222480;
 }
 
 .light-color-footer .footer-text-about-us,
@@ -4800,7 +4800,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .main-color-footer {
-  background-color: #228058;
+  background-color: #222480;
   border-top: 2px solid #fff;
 }
 
@@ -4809,7 +4809,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .main-color-footer .sc-wraper .sc-list .sc-item:hover .sc-icon {
-  color: #228058;
+  color: #222480;
 }
 
 .main-color-footer .contact-info-card .icon,
@@ -4853,7 +4853,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 .index-page-footer .copyrights {
   display: block;
   text-align: center;
-  color: #228058;
+  color: #222480;
   font-size: .8rem;
   font-weight: 500;
   margin: 0;
@@ -4947,13 +4947,13 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   width: 250px;
   height: 125px;
   padding: 2rem;
-  border: 4px solid #228058;
+  border: 4px solid #222480;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
 
 .demos .section-heading .section-title {
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 .demos .section-heading .section-title .heading-brand-name {
@@ -4995,7 +4995,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .demos .demo:hover .demo-name {
-  background-color: #228058;
+  background-color: #222480;
 }
 
 .demos .demo .note {
@@ -5006,7 +5006,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
   font-size: 1.25rem;
   font-weight: 500;
   padding: 1rem 2rem;
-  background: #228058;
+  background: #222480;
   transform: translateY(50%);
   text-transform: lowercase;
   z-index: 2;
@@ -5040,7 +5040,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 .demos .demo .demo-links .demo-link {
   padding: .75rem 1rem;
-  color: #228058;
+  color: #222480;
   text-transform: capitalize;
   font-size: 1.5rem;
   text-align: center;
@@ -5062,7 +5062,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .demos .demo .demo-links .demo-link.light-demo {
-  background-color: #228058;
+  background-color: #222480;
   color: #fff;
 }
 
@@ -5083,13 +5083,13 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 /*   15- Start coloring classes  */
 /*-------------Start text color classes-------------*/
 .text-gradient-color {
-  background: -webkit-linear-gradient(45deg, #228058, #0a6336);
+  background: -webkit-linear-gradient(45deg, #222480, #0a6336);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-main-color {
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 .text-accent-color {
@@ -5127,16 +5127,16 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 /*-------------End text color classes-------------*/
 /*-------------Start bg color classes-------------*/
 .bg-gradient-color {
-  background: -webkit-linear-gradient(45deg, #0a6336, #228058);
+  background: -webkit-linear-gradient(45deg, #0a6336, #222480);
   transition: all 0.5s ease-in-out 0s;
 }
 
 .bg-solid-color {
-  background: #228058;
+  background: #222480;
 }
 
 .bg-main-color {
-  background: #228058 !important;
+  background: #222480 !important;
 }
 
 .bg-accent-color {
@@ -5181,15 +5181,15 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 
 /*-------------End bg color classes-------------*/
 body.section-heading-gradient .section-title {
-  background: -webkit-linear-gradient(45deg, #228058, #0a6336);
+  background: -webkit-linear-gradient(45deg, #222480, #0a6336);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 body.section-heading-main-color .section-title {
   background: none;
-  -webkit-text-fill-color: #228058;
-  color: #228058;
+  -webkit-text-fill-color: #222480;
+  color: #222480;
 }
 
 body.section-heading-black .section-title {
@@ -5240,13 +5240,13 @@ body.dark-theme .ma-tabs .switch .switch-btns-list .switch-btn {
 }
 
 body.dark-theme .ma-tabs .switch .switch-btns-list .switch-btn.hover {
-  color: #228058 !important;
-  border-color: #228058 !important;
+  color: #222480 !important;
+  border-color: #222480 !important;
 }
 
 body.dark-theme .ma-tabs .switch .switch-btns-list .switch-btn.active {
   color: #fff !important;
-  border-color: #228058 !important;
+  border-color: #222480 !important;
 }
 
 body.dark-theme .benefits .benefits-boxes-area .benefit-box {
@@ -5274,7 +5274,7 @@ body.dark-theme .blog .tags .tag-item {
 }
 
 body.dark-theme .blog .tags .tag-item:hover {
-  background-color: #228058 !important;
+  background-color: #222480 !important;
 }
 
 body.dark-theme .blog .tags .tags-icon-label {
@@ -5286,7 +5286,7 @@ body.dark-theme .blog .recent-posts .content .r-post-title {
 }
 
 body.dark-theme .blog .recent-posts .content .r-post-title:hover {
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 body.dark-theme .blog .recent-posts .content .r-post-date {
@@ -5306,7 +5306,7 @@ body.dark-theme .blog .posts-grid .post-summary .post-title {
 }
 
 body.dark-theme .blog .posts-grid .post-summary .post-title:hover {
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 body.dark-theme .blog .posts-grid .post-summary .post-excerpt {
@@ -5315,8 +5315,8 @@ body.dark-theme .blog .posts-grid .post-summary .post-excerpt {
 
 body.dark-theme .blog .posts-pagination .posts-page-item {
   background-color: #252525 !important;
-  color: #228058 !important;
-  border-color: #228058 !important;
+  color: #222480 !important;
+  border-color: #222480 !important;
 }
 
 body.dark-theme .blog .posts-pagination .deactive-posts-page-item {
@@ -5365,7 +5365,7 @@ body.dark-theme .blog .post-main-area .other-posts .other-post-title {
 }
 
 body.dark-theme .blog .post-main-area .other-posts .other-post-title:hover {
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 body.dark-theme .blog .post-main-area .author-profile .author-disc .author-bio {
@@ -5435,7 +5435,7 @@ body.dark-theme .portfolio .portfolio-btn-list .portfolio-btn {
 }
 
 body.dark-theme .portfolio .portfolio-btn-list .portfolio-btn:hover, body.dark-theme .portfolio .portfolio-btn-list .portfolio-btn.active {
-  color: #228058;
+  color: #222480;
 }
 
 body.dark-theme .pricing-2 .plan-cost {
@@ -5447,7 +5447,7 @@ body.dark-theme .portfolio-single .info-area .project-info .info {
 }
 
 body.dark-theme .portfolio-single .info-area .project-info .info .title {
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 body.dark-theme .portfolio-single .info-area .project-info .info .detail {
@@ -5531,7 +5531,7 @@ body.dark-theme .testimonials .testmonial-box .testimonial-content .testimonial-
 }
 
 body.dark-theme .testimonials .testmonial-box .testimonial-content .icon {
-  color: #228058 !important;
+  color: #222480 !important;
 }
 
 body.dark-theme .section-bg-shade {
