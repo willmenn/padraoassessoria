@@ -1352,7 +1352,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .page-header .navbar-brand .brand-logo {
-  max-height: 50px;
+  max-height: 60px;
 }
 
 @media (max-width: 1199px) {
