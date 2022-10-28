@@ -2947,7 +2947,7 @@ body.hard-squared-btns .subscribe .form-group input[type=email] {
 }
 
 .about .text-area .cta-area .signature {
-  max-width: 200px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
