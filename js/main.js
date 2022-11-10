@@ -503,55 +503,55 @@ $(function () {
         });
     }
 
-    /* start mail chimp  */
-    if (jQuery().ajaxChimp) {
+    // /* start mail chimp  */
+    // if (jQuery().ajaxChimp) {
 
-        var subscribeUrl = $(".mc-form").attr('action');
-        // alert vars
-        var alerts = $('.mailchimp-alerts'),
-            msgAll = $('.mc-msg'),
-            msgSubmitting = $('.mc-submitting'),
-            msgSuccess = $('.mc-success'),
-            msgError = $('.mc-error');
+    //     var subscribeUrl = $(".mc-form").attr('action');
+    //     // alert vars
+    //     var alerts = $('.mailchimp-alerts'),
+    //         msgAll = $('.mc-msg'),
+    //         msgSubmitting = $('.mc-submitting'),
+    //         msgSuccess = $('.mc-success'),
+    //         msgError = $('.mc-error');
 
-        $('.mc-form').ajaxChimp({
-            language: 'en',
-            url: subscribeUrl,
-            callback: mailChimpResponse
-        });
+    //     $('.mc-form').ajaxChimp({
+    //         language: 'en',
+    //         url: subscribeUrl,
+    //         callback: mailChimpResponse
+    //     });
 
-        function mailChimpResponse(resp) {
-            if (resp.result === 'success') {
-                alerts.addClass("show-message")
-                msgSuccess.html('' + resp.msg).fadeIn().addClass('active');
-                msgError.hide();
-                $(".mc-form").trigger('reset');
+    //     function mailChimpResponse(resp) {
+    //         if (resp.result === 'success') {
+    //             alerts.addClass("show-message")
+    //             msgSuccess.html('' + resp.msg).fadeIn().addClass('active');
+    //             msgError.hide();
+    //             $(".mc-form").trigger('reset');
 
-                // to remove the all messages text after 5 seconds from response is success
-                setTimeout(function () {
-                    alerts.removeClass("show-message");
-                    msgAll.html('').removeClass('active');
-                }, 5000);
-            } else if (resp.msg.indexOf('is already subscribed') >= 0) {
-                //if the e-mail already subscribed
-                alerts.addClass("show-message")
-                msgError.html('This E-mail is already subscribed, Please try another one').fadeIn(0).addClass('active');
-                // remove the all messages but the error message so the user can notice the error
-                msgSuccess.html('').removeClass('active');
-                msgSubmitting.html('').removeClass('active');
+    //             // to remove the all messages text after 5 seconds from response is success
+    //             setTimeout(function () {
+    //                 alerts.removeClass("show-message");
+    //                 msgAll.html('').removeClass('active');
+    //             }, 5000);
+    //         } else if (resp.msg.indexOf('is already subscribed') >= 0) {
+    //             //if the e-mail already subscribed
+    //             alerts.addClass("show-message")
+    //             msgError.html('This E-mail is already subscribed, Please try another one').fadeIn(0).addClass('active');
+    //             // remove the all messages but the error message so the user can notice the error
+    //             msgSuccess.html('').removeClass('active');
+    //             msgSubmitting.html('').removeClass('active');
 
-            } else if (resp.result === 'error') {
-                // any other errors 
-                alerts.addClass("show-message");
-                msgError.html('' + resp.msg).fadeIn(0).addClass('active');
-                // remove the all messages but the error message so the user can notice the error
-                msgSuccess.html('').removeClass('active');
-                msgSubmitting.html('').removeClass('active');
-            }
-        }
+    //         } else if (resp.result === 'error') {
+    //             // any other errors 
+    //             alerts.addClass("show-message");
+    //             msgError.html('' + resp.msg).fadeIn(0).addClass('active');
+    //             // remove the all messages but the error message so the user can notice the error
+    //             msgSuccess.html('').removeClass('active');
+    //             msgSubmitting.html('').removeClass('active');
+    //         }
+    //     }
 
-    }
-    /* End mail chimp  */
+    // }
+    // /* End mail chimp  */
 
     /*----------------- End Vendors plugins options ----------------- */
 
